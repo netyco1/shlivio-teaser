@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shlivio — launching soon</title>
+<meta name="description" content="Shlivio is launching soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf9f6;
+    --text: #1f2620;
+    --text-muted: #5b655e;
+    --accent: #4f7a5c;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin: 0 auto 28px;
+    animation: breathe 3.4s ease-in-out infinite;
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.55; }
+    50% { transform: scale(1.6); opacity: 1; }
+  }
+
+  .wordmark {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0 0 16px;
+  }
+
+  p.tagline {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin: 0 0 20px;
+    letter-spacing: 0.01em;
+  }
+
+  p.more {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  footer {
+    padding: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="card">
+    <div class="dot" aria-hidden="true"></div>
+    <p class="wordmark">Shlivio</p>
+    <p class="tagline">Disconnect to Reconnect.</p>
+    <p class="more">More to come. Check back soon.</p>
+  </div>
+</main>
+
+<footer>
+  © 2026 Shlivio Inc.
+</footer>
+
+</body>
+</html>
