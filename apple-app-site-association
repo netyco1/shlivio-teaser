@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2C8J32B233.com.shlivio.app",
+        "paths": ["/join/*"]
+      }
+    ]
+  }
+}
